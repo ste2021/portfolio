@@ -1,0 +1,100 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+h6,
+p,
+a {
+    font-family: "Reem Kufi", sans-serif;
+    color: $white-normal;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+.link {
+    
+    padding: 8px 24px;
+    font-size: 18px;
+
+    transition: .5s ease;
+
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        width: 0%;
+        height: 2px;
+
+        transform: translate(14%, -50%);
+        transition: .5s ease;
+       
+        background-color: $white-normal;
+
+    }
+
+    &:hover {
+        width: 70%;
+        opacity: .8;
+
+        &::after {
+            width: 80%;
+        }
+    }
+
+}
+
+
+h1 {
+    font-size: 96px;
+    line-height: 100%;
+}
+
+@media screen and (max-width: 1960px) {
+    h1 {
+        font-size: 64px;
+        line-height: 100%;
+    }
+    h2 {
+        font-size: 48px;
+    }  
+}
+
+h2 {
+    font-size: 72px;
+    line-height: 110%;
+}
+
+h3 {
+    font-size: 40px;
+    line-height: 120%;
+}
+
+h4 {
+    font-size: 32px;
+    line-height: 120%;
+}
+
+h5 {
+    font-size: 24px;
+    line-height: 140%;
+}
+
+h6 {
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.mask {
+    background: linear-gradient(225deg, #F03D3E, #6F2F2F);
+}
